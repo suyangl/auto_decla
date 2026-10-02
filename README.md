@@ -1,12 +1,9 @@
-# Auto Decla LMNP
 
-Local, no-LLM French LMNP tax declaration guide.
 
 This project runs a small FastAPI backend and a static web UI. It does not call an
 AI model. The app uses:
 
-- a local rules engine for LMNP eligibility, micro-BIC / reel guidance, CFE and
-  social contribution reminders;
+- a local rules engine;
 - a local official-source corpus for searchable citations;
 - a local service database for foreigner-facing workflows such as French tax
   filing, health insurance, first residence-card applications and residence-card
