@@ -1,0 +1,1740 @@
+[
+  {
+    "id": "foreigner-tax",
+    "title": {
+      "fr": "Impôts pour étrangers",
+      "zh": "外国人报税",
+      "en": "Tax filing for foreigners",
+      "ar": "ضرائب الأجانب"
+    },
+    "subtitle": {
+      "fr": "Déclaration fiscale française",
+      "zh": "法国个人所得税申报",
+      "en": "French income tax return",
+      "ar": "إقرار ضريبة الدخل الفرنسية"
+    },
+    "badge": {
+      "fr": "Guide local détaillé",
+      "zh": "本地详细向导",
+      "en": "Detailed local guide",
+      "ar": "دليل محلي مفصل"
+    },
+    "summary": {
+      "fr": "Organiser une première déclaration ou une déclaration annuelle : résidence fiscale, numéro fiscal, revenus français et étrangers, dépôt, justificatifs et suivi.",
+      "zh": "整理首次或年度法国个税申报：税务居民判断、税号、法国和境外收入分类、提交、凭证保存和后续跟踪。",
+      "en": "Organize a first or annual French tax return: tax residence, tax number, French and foreign income, filing, records and follow-up.",
+      "ar": "تنظيم أول تصريح أو التصريح السنوي: الإقامة الضريبية، الرقم الضريبي، الدخل الفرنسي والأجنبي، الإرسال، المستندات والمتابعة."
+    },
+    "audience": {
+      "fr": "Étrangers arrivés récemment, étudiants, salariés, indépendants, propriétaires bailleurs ou personnes ayant besoin d’un avis d’impôt pour CAF, logement, banque ou séjour.",
+      "zh": "刚到法国、学生、雇员、自雇、房东，或需要税单用于 CAF、租房、银行、居留材料的人。",
+      "en": "Recent arrivals, students, employees, self-employed people, landlords, or anyone needing a tax notice for CAF, housing, banking or residence paperwork.",
+      "ar": "الوافدون الجدد والطلاب والموظفون والمستقلون والمؤجرون أو من يحتاج إلى إشعار ضريبي لـ CAF أو السكن أو البنك أو الإقامة."
+    },
+    "offline_notice": {
+      "fr": "Ce module reste local : il aide à préparer la déclaration mais ne se connecte pas à impots.gouv.fr et ne transmet rien.",
+      "zh": "本模块只在本地辅助整理材料，不连接 impots.gouv.fr，也不会代替你提交。",
+      "en": "This module stays local: it helps prepare the return but does not connect to impots.gouv.fr or submit anything.",
+      "ar": "هذه الوحدة محلية فقط: تساعد في التحضير ولا تتصل بـ impots.gouv.fr ولا ترسل أي شيء."
+    },
+    "checklist": [
+      {
+        "fr": "Identifier l’année des revenus et l’année de dépôt, par exemple revenus 2025 déclarés en 2026.",
+        "zh": "确认收入年份和申报年份，例如 2025 年收入通常在 2026 年申报。",
+        "en": "Identify the income year and filing year, for example 2025 income filed in 2026.",
+        "ar": "حدد سنة الدخل وسنة التصريح، مثل دخل 2025 المصرح عنه في 2026."
+      },
+      {
+        "fr": "Vérifier les indices de résidence fiscale : foyer, séjour principal, activité principale ou centre des intérêts économiques.",
+        "zh": "判断税务居民线索：住所、主要停留地、主要职业活动或经济利益中心。",
+        "en": "Check tax-residence indicators: home, main stay, main activity or center of economic interests.",
+        "ar": "تحقق من مؤشرات الإقامة الضريبية: السكن، الإقامة الرئيسية، النشاط الرئيسي أو مركز المصالح الاقتصادية."
+      },
+      {
+        "fr": "Retrouver ou demander le numéro fiscal, puis vérifier l’accès à l’espace particulier.",
+        "zh": "查找或申请 numéro fiscal，并确认个人税务空间能登录。",
+        "en": "Find or request the tax number, then check access to the personal tax account.",
+        "ar": "اعثر على الرقم الضريبي أو اطلبه ثم تحقق من الدخول إلى المساحة الشخصية."
+      },
+      {
+        "fr": "Classer chaque revenu séparément : salaire, stage, bourse, micro-entreprise, location, capitaux, revenus étrangers.",
+        "zh": "按类型分开整理收入：工资、实习、奖学金、微企、房租、资本收入、境外收入。",
+        "en": "Classify each income type separately: salary, internship, scholarship, micro-business, rent, investment income, foreign income.",
+        "ar": "صنف كل دخل على حدة: راتب، تدريب، منحة، نشاط صغير، إيجار، دخل رأسمالي، دخل أجنبي."
+      },
+      {
+        "fr": "Conserver les preuves après dépôt : accusé, ASDIR, avis d’impôt, messages et corrections éventuelles.",
+        "zh": "提交后保存凭证：回执、ASDIR、税单、税务空间消息和可能的更正记录。",
+        "en": "Keep post-filing records: receipt, ASDIR, tax notice, messages and any corrections.",
+        "ar": "احتفظ بإثباتات ما بعد الإرسال: الإيصال، ASDIR، الإشعار الضريبي، الرسائل وأي تصحيحات."
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "fr": "Étape 1 : décider s’il faut déclarer",
+          "zh": "第 1 步：判断是否需要报税",
+          "en": "Step 1: decide whether to file",
+          "ar": "الخطوة 1: تحديد وجوب التصريح"
+        },
+        "goal": {
+          "fr": "Partir de votre situation réelle avant de remplir un formulaire.",
+          "zh": "先从个人情况判断，不要一上来就填表。",
+          "en": "Start from your actual situation before filling forms.",
+          "ar": "ابدأ من وضعك الحقيقي قبل ملء النماذج."
+        },
+        "actions": [
+          {
+            "fr": "Notez vos dates d’arrivée, départ, logement, études, travail et revenus de l’année.",
+            "zh": "记录该收入年份的到法/离法日期、住所、学习、工作和收入情况。",
+            "en": "Record arrival/departure dates, housing, studies, work and income for the year.",
+            "ar": "سجل تواريخ الوصول والمغادرة والسكن والدراسة والعمل والدخل للسنة."
+          },
+          {
+            "fr": "Même avec peu ou pas de revenus, préparez une déclaration si un avis d’impôt est utile pour CAF, séjour, logement ou banque.",
+            "zh": "即使低收入或零收入，如果需要税单用于 CAF、续居留、租房或银行，也要整理首次申报路径。",
+            "en": "Even with low or no income, prepare filing if a tax notice is useful for CAF, residence, housing or banking.",
+            "ar": "حتى مع دخل منخفض أو معدوم، حضّر التصريح إذا كان الإشعار الضريبي مفيدا."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Passeport ou titre de séjour",
+            "zh": "护照或居留",
+            "en": "Passport or residence permit",
+            "ar": "جواز السفر أو بطاقة الإقامة"
+          },
+          {
+            "fr": "Justificatif de domicile",
+            "zh": "住址证明",
+            "en": "Proof of address",
+            "ar": "إثبات السكن"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Année à déclarer",
+            "zh": "需申报的收入年份",
+            "en": "Income year to file",
+            "ar": "سنة الدخل للتصريح"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 2 : numéro fiscal et accès",
+          "zh": "第 2 步：税号和登录方式",
+          "en": "Step 2: tax number and access",
+          "ar": "الخطوة 2: الرقم الضريبي والدخول"
+        },
+        "goal": {
+          "fr": "Séparer le cas première déclaration du cas espace particulier déjà ouvert.",
+          "zh": "区分首次申报和已有个人税务空间两种情况。",
+          "en": "Separate first filing from an existing personal account.",
+          "ar": "ميز بين أول تصريح وبين وجود حساب شخصي سابق."
+        },
+        "actions": [
+          {
+            "fr": "Cherchez le numéro fiscal sur les courriers, anciens avis, ASDIR ou messages reçus.",
+            "zh": "先在税务信件、旧税单、ASDIR 或消息中找税号，避免重复创建。",
+            "en": "Look for the tax number on letters, old notices, ASDIR or received messages.",
+            "ar": "ابحث عن الرقم الضريبي في الرسائل أو الإشعارات القديمة أو ASDIR."
+          },
+          {
+            "fr": "Sans numéro, préparez identité, adresse, e-mail, téléphone, RIB et revenus pour demander l’accès ou déposer une première déclaration.",
+            "zh": "没有税号时，准备身份、地址、邮箱、电话、RIB 和收入信息，用于申请开通或首次申报。",
+            "en": "Without a number, prepare ID, address, email, phone, RIB and income data for access or first filing.",
+            "ar": "بدون رقم، حضر الهوية والعنوان والبريد والهاتف وRIB وبيانات الدخل."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Numéro fiscal ou courrier fiscal",
+            "zh": "税号或税务信件",
+            "en": "Tax number or tax letter",
+            "ar": "الرقم أو الرسالة الضريبية"
+          },
+          {
+            "fr": "RIB",
+            "zh": "RIB",
+            "en": "RIB",
+            "ar": "RIB"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Accès impots.gouv.fr prêt",
+            "zh": "税务网站登录准备好",
+            "en": "Tax-account access ready",
+            "ar": "الدخول إلى الحساب الضريبي جاهز"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 3 : classer les revenus",
+          "zh": "第 3 步：收入分类",
+          "en": "Step 3: classify income",
+          "ar": "الخطوة 3: تصنيف الدخل"
+        },
+        "goal": {
+          "fr": "Éviter de tout mettre en salaire ou d’oublier les revenus hors de France.",
+          "zh": "避免把所有收入都当工资，或漏掉境外收入。",
+          "en": "Avoid treating everything as salary or omitting foreign income.",
+          "ar": "تجنب اعتبار كل شيء راتبا أو نسيان الدخل الأجنبي."
+        },
+        "actions": [
+          {
+            "fr": "Salaire : utilisez le net imposable annuel et gardez les fiches de paie.",
+            "zh": "工资：使用全年 net imposable，并保存工资单。",
+            "en": "Salary: use annual taxable net income and keep payslips.",
+            "ar": "الراتب: استخدم صافي الدخل الخاضع للضريبة واحتفظ بقسائم الراتب."
+          },
+          {
+            "fr": "Stage, bourse, indépendant, location et revenus étrangers : gardez chaque justificatif séparé.",
+            "zh": "实习、奖学金、自雇、房租和境外收入：每类凭证分开保存。",
+            "en": "Internship, scholarship, self-employment, rent and foreign income: keep each record separately.",
+            "ar": "التدريب والمنحة والعمل المستقل والإيجار والدخل الأجنبي: احتفظ بكل إثبات منفصلا."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Fiches de paie",
+            "zh": "工资单",
+            "en": "Payslips",
+            "ar": "قسائم الراتب"
+          },
+          {
+            "fr": "Relevés bancaires",
+            "zh": "银行流水",
+            "en": "Bank statements",
+            "ar": "كشوف الحساب"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Tableau des revenus par catégorie",
+            "zh": "按类别整理的收入表",
+            "en": "Income table by category",
+            "ar": "جدول الدخل حسب الفئة"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 4 : vérifier avant dépôt",
+          "zh": "第 4 步：提交前核对",
+          "en": "Step 4: review before filing",
+          "ar": "الخطوة 4: المراجعة قبل الإرسال"
+        },
+        "goal": {
+          "fr": "Réduire les erreurs sur identité, adresse, foyer fiscal et comptes bancaires.",
+          "zh": "减少身份、地址、税户和银行账户错误。",
+          "en": "Reduce errors on identity, address, tax household and bank details.",
+          "ar": "تقليل أخطاء الهوية والعنوان والأسرة الضريبية والحساب البنكي."
+        },
+        "actions": [
+          {
+            "fr": "Contrôlez situation familiale, adresse au 1er janvier, adresse actuelle, RIB et coordonnées.",
+            "zh": "核对家庭状态、1 月 1 日地址、当前地址、RIB 和联系方式。",
+            "en": "Check family status, address on 1 January, current address, RIB and contact details.",
+            "ar": "تحقق من الحالة العائلية وعنوان 1 يناير والعنوان الحالي وRIB وبيانات الاتصال."
+          },
+          {
+            "fr": "Sauvegardez un brouillon PDF ou des captures avant validation finale.",
+            "zh": "最终提交前保存 PDF 草稿或截图。",
+            "en": "Save a PDF draft or screenshots before final validation.",
+            "ar": "احفظ مسودة PDF أو لقطات قبل التأكيد النهائي."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Brouillon",
+            "zh": "申报草稿",
+            "en": "Draft",
+            "ar": "مسودة"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Dossier prêt à déposer",
+            "zh": "可提交状态",
+            "en": "Ready-to-file status",
+            "ar": "ملف جاهز للإرسال"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 5 : suivre après dépôt",
+          "zh": "第 5 步：提交后跟踪",
+          "en": "Step 5: follow up after filing",
+          "ar": "الخطوة 5: المتابعة بعد الإرسال"
+        },
+        "goal": {
+          "fr": "Archiver ce qui servira pour CAF, logement, banque ou séjour.",
+          "zh": "归档之后 CAF、租房、银行、居留会用到的文件。",
+          "en": "Archive documents needed for CAF, housing, banking or residence.",
+          "ar": "أرشف ما ستحتاجه لـ CAF أو السكن أو البنك أو الإقامة."
+        },
+        "actions": [
+          {
+            "fr": "Téléchargez l’accusé, l’ASDIR puis l’avis d’impôt dès disponibilité.",
+            "zh": "下载提交回执、ASDIR，税单可用后也下载。",
+            "en": "Download the receipt, ASDIR and tax notice when available.",
+            "ar": "نزّل الإيصال وASDIR والإشعار الضريبي عند توفره."
+          },
+          {
+            "fr": "Surveillez la messagerie impots.gouv.fr et les demandes d’information.",
+            "zh": "关注税务空间消息和补充信息要求。",
+            "en": "Monitor impots.gouv.fr messages and information requests.",
+            "ar": "تابع رسائل الموقع وطلبات المعلومات."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "ASDIR",
+            "zh": "ASDIR",
+            "en": "ASDIR",
+            "ar": "ASDIR"
+          },
+          {
+            "fr": "Avis d’impôt",
+            "zh": "税单",
+            "en": "Tax notice",
+            "ar": "الإشعار الضريبي"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Archive fiscale complète",
+            "zh": "税务归档完成",
+            "en": "Complete tax archive",
+            "ar": "أرشيف ضريبي كامل"
+          }
+        ]
+      }
+    ],
+    "local_fields": [],
+    "official_links": [
+      {
+        "label": "impots.gouv.fr - Particulier",
+        "url": "https://www.impots.gouv.fr/particulier",
+        "note": {
+          "fr": "Espace particulier, déclaration et messagerie.",
+          "zh": "个人税务空间、申报和消息入口。",
+          "en": "Personal account, filing and messaging.",
+          "ar": "الحساب الشخصي والتصريح والرسائل."
+        }
+      },
+      {
+        "label": "Service-Public - Impôt sur le revenu",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/N247",
+        "note": {
+          "fr": "Point d’entrée officiel sur l’impôt sur le revenu.",
+          "zh": "个人所得税官方说明入口。",
+          "en": "Official entry point for income tax.",
+          "ar": "مدخل رسمي لضريبة الدخل."
+        }
+      }
+    ],
+    "next_steps": [
+      {
+        "fr": "Préparez d’abord l’accès fiscal, puis les revenus par catégorie.",
+        "zh": "先准备税务登录，再按类别整理收入。",
+        "en": "Prepare tax access first, then income by category.",
+        "ar": "حضّر الدخول الضريبي أولا ثم الدخل حسب الفئة."
+      }
+    ],
+    "disclaimer": {
+      "fr": "Aide locale, pas conseil fiscal personnalisé.",
+      "zh": "本地清单辅助，不是个性化税务意见。",
+      "en": "Local helper, not personalized tax advice.",
+      "ar": "مساعدة محلية وليست نصيحة ضريبية شخصية."
+    }
+  },
+  {
+    "id": "health-insurance",
+    "title": {
+      "fr": "Assurance maladie",
+      "zh": "外国人办理医保",
+      "en": "Health insurance",
+      "ar": "التأمين الصحي"
+    },
+    "subtitle": {
+      "fr": "CPAM, ameli, Carte Vitale, CSS",
+      "zh": "CPAM、ameli、Carte Vitale、CSS",
+      "en": "CPAM, ameli, Vitale card, CSS",
+      "ar": "CPAM وameli وبطاقة Vitale وCSS"
+    },
+    "badge": {
+      "fr": "Parcours détaillé",
+      "zh": "详细流程",
+      "en": "Detailed route",
+      "ar": "مسار مفصل"
+    },
+    "summary": {
+      "fr": "Dossier complet pour ouvrir l’Assurance Maladie en France : affiliation étudiant, pièces, NIA/numéro provisoire, numéro définitif, compte ameli, Carte Vitale, médecin traitant et Complémentaire santé solidaire.",
+      "zh": "完整整理在法国开通医保：学生参保、材料、NIA/临时号、正式号、ameli 账户、Carte Vitale、家庭医生和 CSS。",
+      "en": "Complete route for opening French health insurance: student affiliation, documents, NIA/temporary number, final number, ameli account, Vitale card, primary doctor and CSS.",
+      "ar": "مسار كامل لفتح التأمين الصحي في فرنسا: انتساب الطالب والوثائق وNIA/الرقم المؤقت والرقم النهائي وحساب ameli وبطاقة Vitale والطبيب وCSS."
+    },
+    "audience": {
+      "fr": "Étudiants étrangers, salariés, membres de famille et résidents étrangers qui ouvrent ou régularisent leurs droits santé en France.",
+      "zh": "外国学生、雇员、家庭成员，以及需要在法国开通或补齐医保权利的长期居民。",
+      "en": "Foreign students, employees, family members and residents opening or regularizing French health-care rights.",
+      "ar": "الطلاب الأجانب والموظفون وأفراد العائلة والمقيمون الذين يفتحون أو يسوون حقوقهم الصحية في فرنسا."
+    },
+    "offline_notice": {
+      "fr": "Ce guide prépare le dossier localement; il ne remplace pas la CPAM et ne téléverse pas vos justificatifs.",
+      "zh": "本指南只在本地整理材料，不代替 CPAM，也不会上传你的文件。",
+      "en": "This guide prepares the file locally; it does not replace CPAM and does not upload documents.",
+      "ar": "هذا الدليل يحضر الملف محليا ولا يحل محل CPAM ولا يرفع مستنداتك."
+    },
+    "checklist": [
+      {
+        "fr": "Déterminez votre porte d’entrée : étudiant sur etudiant-etranger.ameli.fr, salarié ou autre résident via CPAM.",
+        "zh": "确定入口：学生走 etudiant-etranger.ameli.fr，雇员或其他居民走 CPAM。",
+        "en": "Choose the entry point: student via etudiant-etranger.ameli.fr, employee or other resident via CPAM.",
+        "ar": "حدد المدخل: الطالب عبر etudiant-etranger.ameli.fr، والموظف أو المقيم الآخر عبر CPAM."
+      },
+      {
+        "fr": "Préparez identité, séjour si demandé, acte de naissance, traduction, adresse française, RIB/IBAN et preuve de statut.",
+        "zh": "准备身份证明、如要求的居留文件、出生证明、翻译、法国地址、RIB/IBAN 和身份路径证明。",
+        "en": "Prepare ID, residence document if requested, birth certificate, translation, French address, RIB/IBAN and status proof.",
+        "ar": "حضّر الهوية ووثيقة الإقامة عند الطلب وشهادة الميلاد والترجمة والعنوان الفرنسي وRIB/IBAN وإثبات الوضع."
+      },
+      {
+        "fr": "Pour les étudiants, créez le dossier après obtention de l’attestation de scolarité.",
+        "zh": "学生拿到学校注册证明后创建医保档案。",
+        "en": "Students create the file after receiving the school certificate.",
+        "ar": "ينشئ الطلاب الملف بعد الحصول على شهادة التسجيل."
+      },
+      {
+        "fr": "Suivez séparément NIA/numéro provisoire, numéro définitif, attestation de droits, compte ameli et Carte Vitale.",
+        "zh": "分别跟踪 NIA/临时号、正式号、权利证明、ameli 账户和 Carte Vitale。",
+        "en": "Track NIA/temporary number, final number, rights certificate, ameli account and Vitale card separately.",
+        "ar": "تابع NIA/الرقم المؤقت والرقم النهائي وشهادة الحقوق وحساب ameli وبطاقة Vitale كل على حدة."
+      },
+      {
+        "fr": "Évaluez la complémentaire : mutuelle privée, mutuelle employeur ou CSS selon vos ressources.",
+        "zh": "评估补充保险：私人 mutuelle、雇主 mutuelle 或按收入申请 CSS。",
+        "en": "Assess top-up coverage: private plan, employer plan or CSS depending on resources.",
+        "ar": "قيّم التغطية التكميلية: خاصة أو من صاحب العمل أو CSS حسب الموارد."
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "fr": "Étape 1 : choisir la bonne porte d’entrée",
+          "zh": "第 1 步：选择正确入口",
+          "en": "Step 1: choose the right entry point",
+          "ar": "الخطوة 1: اختيار المدخل الصحيح"
+        },
+        "goal": {
+          "fr": "Le parcours dépend surtout de votre statut administratif en France, sans sous-diviser les étudiants par nationalité.",
+          "zh": "路径主要取决于你在法国的行政身份，这里不按学生国籍再细分。",
+          "en": "The route depends mainly on your administrative status in France, without subdividing students by nationality.",
+          "ar": "يعتمد المسار أساسا على وضعك الإداري في فرنسا دون تقسيم الطلاب حسب الجنسية."
+        },
+        "actions": [
+          {
+            "fr": "Étudiant : utilisez le portail étudiant après l’inscription dans l’établissement.",
+            "zh": "学生：完成学校注册后使用学生医保入口。",
+            "en": "Student: use the student portal after school registration.",
+            "ar": "طالب: استخدم بوابة الطلاب بعد التسجيل في المؤسسة."
+          },
+          {
+            "fr": "Salarié ou autre résident : préparez le formulaire S1106 et le dossier CPAM selon votre situation.",
+            "zh": "雇员或其他居民：按身份准备 S1106 表和 CPAM 材料。",
+            "en": "Employee or other resident: prepare S1106 and the CPAM file for your situation.",
+            "ar": "موظف أو مقيم آخر: حضر S1106 وملف CPAM حسب وضعك."
+          },
+          {
+            "fr": "Si une pièce spécifique est demandée par votre espace ou votre CPAM, ajoutez-la sans créer un parcours séparé.",
+            "zh": "如果个人空间或 CPAM 要求特定材料，直接补充，不单独拆成另一条路径。",
+            "en": "If your portal or CPAM asks for a specific document, add it without creating a separate route.",
+            "ar": "إذا طلبت البوابة أو CPAM وثيقة محددة فأضفها دون إنشاء مسار منفصل."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Passeport ou carte d’identité",
+            "zh": "护照或身份证",
+            "en": "Passport or ID",
+            "ar": "جواز سفر أو هوية"
+          },
+          {
+            "fr": "Titre de séjour ou visa si demandé",
+            "zh": "如要求的居留或签证",
+            "en": "Residence permit or visa if requested",
+            "ar": "إقامة أو تأشيرة عند الطلب"
+          },
+          {
+            "fr": "Certificat de scolarité ou preuve de statut",
+            "zh": "学校注册证明或身份路径证明",
+            "en": "School certificate or status proof",
+            "ar": "شهادة دراسة أو إثبات وضع"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Porte d’entrée choisie",
+            "zh": "入口已选定",
+            "en": "Entry point chosen",
+            "ar": "تم اختيار المدخل"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 2 : préparer l’état civil et les justificatifs",
+          "zh": "第 2 步：准备身份和民事文件",
+          "en": "Step 2: prepare civil-status and supporting documents",
+          "ar": "الخطوة 2: تحضير الحالة المدنية والإثباتات"
+        },
+        "goal": {
+          "fr": "Les blocages viennent souvent de l’acte de naissance, des noms ou d’une pièce illisible.",
+          "zh": "进度常卡在出生证明、姓名拼写或文件不清晰。",
+          "en": "Delays often come from birth certificates, name differences or unreadable files.",
+          "ar": "تأتي التأخيرات غالبا من شهادة الميلاد أو اختلاف الأسماء أو ملفات غير واضحة."
+        },
+        "actions": [
+          {
+            "fr": "Préparez l’acte de naissance complet avec filiation et traduction si nécessaire.",
+            "zh": "准备带父母信息的完整出生证明，并按要求准备翻译。",
+            "en": "Prepare a full birth certificate with parent details and translation if needed.",
+            "ar": "حضّر شهادة ميلاد كاملة مع معلومات الوالدين وترجمة إذا لزم."
+          },
+          {
+            "fr": "Ajoutez adresse française, téléphone, e-mail, RIB/IBAN et preuve de statut.",
+            "zh": "补齐法国地址、电话、邮箱、RIB/IBAN 和身份路径证明。",
+            "en": "Add French address, phone, email, RIB/IBAN and status proof.",
+            "ar": "أضف العنوان الفرنسي والهاتف والبريد وRIB/IBAN وإثبات الوضع."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Acte de naissance",
+            "zh": "出生证明",
+            "en": "Birth certificate",
+            "ar": "شهادة ميلاد"
+          },
+          {
+            "fr": "Traduction",
+            "zh": "翻译件",
+            "en": "Translation",
+            "ar": "ترجمة"
+          },
+          {
+            "fr": "RIB",
+            "zh": "RIB",
+            "en": "RIB",
+            "ar": "RIB"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Dossier identité prêt",
+            "zh": "身份材料包准备好",
+            "en": "Identity file ready",
+            "ar": "ملف الهوية جاهز"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 3 : suivre NIA, numéro provisoire et droits",
+          "zh": "第 3 步：跟踪 NIA、临时号和医保权利",
+          "en": "Step 3: track NIA, temporary number and rights",
+          "ar": "الخطوة 3: متابعة NIA والرقم المؤقت والحقوق"
+        },
+        "goal": {
+          "fr": "Obtenir une attestation de droits utilisable même avant la Carte Vitale.",
+          "zh": "目标是在实体 Vitale 卡之前，先拿到可用的权利证明。",
+          "en": "Get a usable rights certificate even before the Vitale card.",
+          "ar": "الحصول على شهادة حقوق قابلة للاستخدام قبل بطاقة Vitale."
+        },
+        "actions": [
+          {
+            "fr": "Notez la date de dépôt, le numéro de dossier et chaque demande de complément.",
+            "zh": "记录提交日期、档案号和每次补件要求。",
+            "en": "Record filing date, file number and each additional-document request.",
+            "ar": "سجل تاريخ الإرسال ورقم الملف وكل طلب وثائق إضافية."
+          },
+          {
+            "fr": "Téléchargez l’attestation provisoire dès qu’elle apparaît.",
+            "zh": "一旦有临时权利证明，马上下载。",
+            "en": "Download the provisional certificate as soon as it appears.",
+            "ar": "نزّل الشهادة المؤقتة بمجرد ظهورها."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Récépissé",
+            "zh": "提交回执",
+            "en": "Receipt",
+            "ar": "إيصال"
+          },
+          {
+            "fr": "Courriers CPAM",
+            "zh": "CPAM 信件",
+            "en": "CPAM letters",
+            "ar": "رسائل CPAM"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Numéro et droits suivis",
+            "zh": "号码和权利进度已跟踪",
+            "en": "Number and rights tracked",
+            "ar": "تمت متابعة الرقم والحقوق"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 4 : compte ameli, attestation définitive et Carte Vitale",
+          "zh": "第 4 步：ameli 账户、正式证明和 Carte Vitale",
+          "en": "Step 4: ameli account, final certificate and Vitale card",
+          "ar": "الخطوة 4: حساب ameli والشهادة النهائية وبطاقة Vitale"
+        },
+        "goal": {
+          "fr": "Une fois le numéro certifié, fermer la boucle administrative.",
+          "zh": "正式号确认后，把账户和实体卡闭环做完。",
+          "en": "Once the number is certified, close the administrative loop.",
+          "ar": "بعد اعتماد الرقم، أكمل الحلقة الإدارية."
+        },
+        "actions": [
+          {
+            "fr": "Créez le compte ameli quand le numéro définitif est reconnu.",
+            "zh": "正式号可识别后创建 ameli 账户。",
+            "en": "Create the ameli account when the final number is recognized.",
+            "ar": "أنشئ حساب ameli عندما يتم التعرف على الرقم النهائي."
+          },
+          {
+            "fr": "Téléchargez l’attestation définitive et demandez la Carte Vitale avec photo et pièce d’identité.",
+            "zh": "下载正式权利证明，并按要求用照片和身份证明申请 Carte Vitale。",
+            "en": "Download the final certificate and request the Vitale card with photo and ID.",
+            "ar": "نزّل الشهادة النهائية واطلب بطاقة Vitale بالصورة والهوية."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Numéro définitif",
+            "zh": "正式社保号",
+            "en": "Final number",
+            "ar": "الرقم النهائي"
+          },
+          {
+            "fr": "Photo",
+            "zh": "照片",
+            "en": "Photo",
+            "ar": "صورة"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Compte ameli et Carte Vitale lancés",
+            "zh": "ameli 和 Carte Vitale 已推进",
+            "en": "ameli and Vitale card started",
+            "ar": "بدأ حساب ameli وبطاقة Vitale"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape 5 : médecin traitant, mutuelle et CSS",
+          "zh": "第 5 步：家庭医生、补充保险和 CSS",
+          "en": "Step 5: primary doctor, top-up insurance and CSS",
+          "ar": "الخطوة 5: الطبيب المعالج والتأمين التكميلي وCSS"
+        },
+        "goal": {
+          "fr": "Le remboursement dépend aussi du parcours de soins et d’une couverture complémentaire éventuelle.",
+          "zh": "报销效果也取决于是否声明家庭医生，以及是否有补充保险。",
+          "en": "Reimbursement also depends on care pathway and possible top-up coverage.",
+          "ar": "يعتمد التعويض أيضا على مسار الرعاية والتغطية التكميلية المحتملة."
+        },
+        "actions": [
+          {
+            "fr": "Déclarez un médecin traitant dès que possible.",
+            "zh": "尽早声明 médecin traitant。",
+            "en": "Declare a primary doctor as soon as possible.",
+            "ar": "صرّح بطبيب معالج بأسرع وقت."
+          },
+          {
+            "fr": "Comparez mutuelle étudiante, mutuelle employeur ou Complémentaire santé solidaire selon vos ressources.",
+            "zh": "按收入和身份比较学生 mutuelle、雇主 mutuelle 或 CSS。",
+            "en": "Compare student top-up, employer top-up or CSS depending on resources.",
+            "ar": "قارن بين تأمين الطالب أو صاحب العمل أو CSS حسب الموارد."
+          },
+          {
+            "fr": "Pour la CSS, demande possible via ameli ou formulaire papier auprès de la CPAM.",
+            "zh": "CSS 可通过 ameli 或纸质表向 CPAM 申请。",
+            "en": "CSS can be requested through ameli or by paper form to CPAM.",
+            "ar": "يمكن طلب CSS عبر ameli أو باستمارة ورقية لدى CPAM."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Déclaration médecin traitant",
+            "zh": "家庭医生声明",
+            "en": "Primary doctor declaration",
+            "ar": "تصريح الطبيب"
+          },
+          {
+            "fr": "Dossier CSS",
+            "zh": "CSS 材料",
+            "en": "CSS file",
+            "ar": "ملف CSS"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Couverture complémentaire clarifiée",
+            "zh": "补充保险路径明确",
+            "en": "Top-up coverage clarified",
+            "ar": "تم توضيح التغطية التكميلية"
+          }
+        ]
+      }
+    ],
+    "local_fields": [],
+    "official_links": [
+      {
+        "label": {
+          "fr": "ameli - Étudiant étranger",
+          "zh": "ameli - 外国学生医保",
+          "en": "ameli - Foreign student",
+          "ar": "ameli - الطالب الأجنبي"
+        },
+        "url": "https://www.ameli.fr/assure/droits-demarches/europe-international/protection-sociale-france/vous-venez-etudier-en-france",
+        "note": {
+          "fr": "Page officielle ameli pour l’inscription des étudiants étrangers.",
+          "zh": "ameli 外国学生注册官方说明。",
+          "en": "Official ameli page for foreign-student registration.",
+          "ar": "صفحة ameli الرسمية لتسجيل الطلاب الأجانب."
+        }
+      },
+      {
+        "label": {
+          "fr": "etudiant-etranger.ameli.fr",
+          "zh": "学生医保入口",
+          "en": "Student health-insurance portal",
+          "ar": "بوابة تأمين الطلاب"
+        },
+        "url": "https://etudiant-etranger.ameli.fr/",
+        "note": {
+          "fr": "Portail dédié aux étudiants internationaux.",
+          "zh": "国际学生专用入口。",
+          "en": "Dedicated portal for international students.",
+          "ar": "بوابة مخصصة للطلاب الدوليين."
+        }
+      },
+      {
+        "label": {
+          "fr": "ameli - Demander la CSS",
+          "zh": "ameli - 申请 CSS",
+          "en": "ameli - Apply for CSS",
+          "ar": "ameli - طلب CSS"
+        },
+        "url": "https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante/complementaire-sante-solidaire-demande",
+        "note": {
+          "fr": "Demande de Complémentaire santé solidaire.",
+          "zh": "Complémentaire santé solidaire 申请。",
+          "en": "Complémentaire santé solidaire application.",
+          "ar": "طلب Complémentaire santé solidaire."
+        }
+      },
+      {
+        "label": {
+          "fr": "Service-Public - Assurance maladie d’un étranger",
+          "zh": "Service-Public - 外国人医保",
+          "en": "Service-Public - Foreigner health insurance",
+          "ar": "Service-Public - تأمين الأجنبي الصحي"
+        },
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F12859",
+        "note": {
+          "fr": "Explications générales pour les étrangers qui s’installent en France.",
+          "zh": "外国人在法国定居医保的一般说明。",
+          "en": "General explanations for foreigners settling in France.",
+          "ar": "شرح عام للأجانب المقيمين في فرنسا."
+        }
+      }
+    ],
+    "next_steps": [
+      {
+        "fr": "Commencez par le bon portail, puis archivez chaque attestation téléchargée.",
+        "zh": "先选对入口，再归档每一份下载的证明。",
+        "en": "Start with the right portal, then archive every downloaded certificate.",
+        "ar": "ابدأ بالبوابة الصحيحة ثم أرشف كل شهادة يتم تنزيلها."
+      }
+    ],
+    "disclaimer": {
+      "fr": "Les conditions peuvent dépendre de votre caisse et de votre statut; vérifiez toujours la demande officielle en cours.",
+      "zh": "具体要求可能随 caisse 和身份不同而变化；正式提交前以官方页面为准。",
+      "en": "Requirements may depend on your fund and status; always check the current official request.",
+      "ar": "قد تختلف المتطلبات حسب الصندوق والوضع؛ تحقق دائما من الطلب الرسمي الحالي."
+    }
+  },
+  {
+    "id": "first-residence-card",
+    "title": {
+      "fr": "Première carte de séjour",
+      "zh": "首次申请居留卡",
+      "en": "First residence card",
+      "ar": "أول بطاقة إقامة"
+    },
+    "subtitle": {
+      "fr": "Deux situations distinctes : VLS-TS étudiant ou visa étudiant-concours",
+      "zh": "两个独立情况：学生 VLS-TS 或 étudiant-concours 签证",
+      "en": "Two separate situations: student VLS-TS or étudiant-concours visa",
+      "ar": "حالتان منفصلتان: VLS-TS طالب أو تأشيرة étudiant-concours"
+    },
+    "badge": {
+      "fr": "Demande initiale",
+      "zh": "首次申请",
+      "en": "Initial application",
+      "ar": "طلب أول"
+    },
+    "summary": {
+      "fr": "Guide séparant clairement deux entrées indépendantes : valider et transformer un VLS-TS étudiant, ou demander une carte étudiant après admission avec un visa étudiant-concours. Les étapes de dépôt, complément et retrait sont ensuite communes.",
+      "zh": "把两个独立入口分开：学生 VLS-TS 的验证与后续学生居留申请；或持 étudiant-concours 签证录取后申请学生居留。提交、补件和取卡步骤再共用。",
+      "en": "Guide that clearly separates two independent entries: validating and continuing from a student VLS-TS, or applying for a student card after admission with an étudiant-concours visa. Filing, requests and pickup are then common.",
+      "ar": "دليل يفصل بوضوح بين مدخلين مستقلين: تفعيل VLS-TS طالب ومتابعته، أو طلب بطاقة طالب بعد القبول بتأشيرة étudiant-concours. ثم تكون خطوات الإرسال والطلبات والاستلام مشتركة."
+    },
+    "audience": {
+      "fr": "Étudiants étrangers avec VLS-TS étudiant, visa étudiant-concours après admission, ou première demande de carte de séjour étudiant en France.",
+      "zh": "持学生 VLS-TS、étudiant-concours 录取后，或在法国首次申请学生居留卡的人。",
+      "en": "Foreign students with a student VLS-TS, an étudiant-concours visa after admission, or a first student residence-card request in France.",
+      "ar": "الطلاب الأجانب مع VLS-TS طالب أو تأشيرة étudiant-concours بعد القبول أو أول طلب بطاقة طالب في فرنسا."
+    },
+    "offline_notice": {
+      "fr": "Ce module ne se connecte pas à ANEF et ne dépose pas de demande; il sert à préparer un dossier clair.",
+      "zh": "本模块不连接 ANEF、不提交申请，只用于整理清晰材料包。",
+      "en": "This module does not connect to ANEF or file an application; it prepares a clear dossier.",
+      "ar": "هذه الوحدة لا تتصل بـ ANEF ولا تقدم الطلب؛ بل تحضر ملفا واضحا."
+    },
+    "checklist": [
+      {
+        "fr": "Choisissez d’abord votre situation : VLS-TS étudiant ou visa étudiant-concours après admission.",
+        "zh": "先选择你的情况：学生 VLS-TS，或录取后的 étudiant-concours 签证。",
+        "en": "First choose your situation: student VLS-TS or étudiant-concours visa after admission.",
+        "ar": "اختر حالتك أولا: VLS-TS طالب أو تأشيرة étudiant-concours بعد القبول."
+      },
+      {
+        "fr": "Pour VLS-TS étudiant : vérifiez la validation dans les 3 mois, la date d’entrée, l’expiration et la preuve de validation.",
+        "zh": "学生 VLS-TS：核对 3 个月内验证、入境日期、到期日和验证证明。",
+        "en": "For student VLS-TS: check validation within 3 months, entry date, expiry and validation proof.",
+        "ar": "بالنسبة لـ VLS-TS طالب: تحقق من التفعيل خلال 3 أشهر وتاريخ الدخول والانتهاء وإثبات التفعيل."
+      },
+      {
+        "fr": "Pour étudiant-concours : gardez convocation, preuve de concours, résultat, admission et explication de continuité.",
+        "zh": "étudiant-concours：保存考试邀请、参加证明、结果、录取和连续性解释。",
+        "en": "For étudiant-concours: keep invitation, exam proof, result, admission and continuity explanation.",
+        "ar": "بالنسبة لـ étudiant-concours: احتفظ بالدعوة وإثبات الامتحان والنتيجة والقبول وشرح الاستمرارية."
+      },
+      {
+        "fr": "Dans les deux cas, préparez passeport, e-photo, domicile, scolarité/préinscription, notes, diplôme, ressources et contrat républicain si demandé.",
+        "zh": "两种情况都准备护照、e-photo、住址、注册/预注册、成绩、文凭、资源证明，以及如要求的共和国原则承诺。",
+        "en": "In both cases, prepare passport, e-photo, address, registration/pre-registration, transcripts, diploma, resources and republican commitment if requested.",
+        "ar": "في الحالتين حضّر الجواز وe-photo والسكن والتسجيل/التسجيل المسبق والدرجات والشهادة والموارد والالتزام الجمهوري عند الطلب."
+      },
+      {
+        "fr": "Après dépôt, suivez attestation, demande de complément, timbre fiscal et rendez-vous de retrait.",
+        "zh": "提交后跟踪 attestation、补件、税票和取卡预约。",
+        "en": "After filing, track certificate, additional-document request, tax stamp and pickup appointment.",
+        "ar": "بعد الإرسال تابع الشهادة وطلب الوثائق والطابع الضريبي وموعد الاستلام."
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "fr": "Situation A : vous avez un VLS-TS étudiant",
+          "zh": "情况 A：你持有学生 VLS-TS",
+          "en": "Situation A: you have a student VLS-TS",
+          "ar": "الحالة A: لديك VLS-TS طالب"
+        },
+        "goal": {
+          "fr": "Cette situation part d’un visa long séjour étudiant qui doit être validé puis utilisé comme base du dossier suivant.",
+          "zh": "这是长期学生签证路径：先验证 VLS-TS，再作为后续学生居留申请基础。",
+          "en": "This starts from a long-stay student visa that must be validated and then used as the basis for the next file.",
+          "ar": "تبدأ هذه الحالة من تأشيرة طالب طويلة يجب تفعيلها ثم استخدامها كأساس للملف التالي."
+        },
+        "actions": [
+          {
+            "fr": "Validez le VLS-TS sur le portail officiel dans les 3 mois suivant l’arrivée si ce n’est pas déjà fait.",
+            "zh": "如尚未完成，在抵法 3 个月内通过官方平台验证 VLS-TS。",
+            "en": "Validate the VLS-TS on the official portal within 3 months after arrival if not already done.",
+            "ar": "فعّل VLS-TS على البوابة الرسمية خلال 3 أشهر من الوصول إذا لم تفعل ذلك."
+          },
+          {
+            "fr": "Conservez confirmation, numéro étranger, preuve de paiement, visa et date d’entrée.",
+            "zh": "保存确认文件、外国人号码、付款证明、签证和入境日期。",
+            "en": "Keep confirmation, foreigner number, payment proof, visa and entry date.",
+            "ar": "احتفظ بالتأكيد ورقم الأجنبي وإثبات الدفع والتأشيرة وتاريخ الدخول."
+          },
+          {
+            "fr": "Avant expiration, préparez la première carte étudiant avec inscription, ressources, domicile et e-photo.",
+            "zh": "到期前，用注册证明、资源证明、住址和 e-photo 准备首次学生居留卡。",
+            "en": "Before expiry, prepare the first student card with registration, resources, address and e-photo.",
+            "ar": "قبل الانتهاء، حضّر أول بطاقة طالب بالتسجيل والموارد والسكن وe-photo."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Visa VLS-TS validé",
+            "zh": "已验证 VLS-TS 签证",
+            "en": "Validated VLS-TS visa",
+            "ar": "تأشيرة VLS-TS مفعلة"
+          },
+          {
+            "fr": "Confirmation de validation",
+            "zh": "验证确认文件",
+            "en": "Validation confirmation",
+            "ar": "تأكيد التفعيل"
+          },
+          {
+            "fr": "Certificat de scolarité",
+            "zh": "学校注册证明",
+            "en": "School certificate",
+            "ar": "شهادة دراسة"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Dossier VLS-TS prêt pour la suite",
+            "zh": "VLS-TS 后续材料准备好",
+            "en": "VLS-TS file ready for next step",
+            "ar": "ملف VLS-TS جاهز للخطوة التالية"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Situation B : vous avez un visa étudiant-concours",
+          "zh": "情况 B：你持有 étudiant-concours 签证",
+          "en": "Situation B: you have an étudiant-concours visa",
+          "ar": "الحالة B: لديك تأشيرة étudiant-concours"
+        },
+        "goal": {
+          "fr": "Cette situation part d’un visa venu pour un concours, examen ou sélection, puis d’une admission effective.",
+          "zh": "这是为考试/选拔来法的签证路径，核心是之后获得正式录取。",
+          "en": "This starts from a visa for an exam, competition or selection process, followed by actual admission.",
+          "ar": "تبدأ هذه الحالة من تأشيرة لامتحان أو اختيار ثم قبول فعلي."
+        },
+        "actions": [
+          {
+            "fr": "Ne mélangez pas ce cas avec la validation VLS-TS : préparez les preuves du concours et de l’admission.",
+            "zh": "不要把它和 VLS-TS 验证混在一起：重点准备考试和录取证据。",
+            "en": "Do not mix this with VLS-TS validation: prepare exam and admission proof.",
+            "ar": "لا تخلطها مع تفعيل VLS-TS: حضّر إثبات الامتحان والقبول."
+          },
+          {
+            "fr": "Gardez convocation, présence au concours, résultat, admission finale et dates.",
+            "zh": "保存考试邀请、参加证明、结果、最终录取和日期。",
+            "en": "Keep invitation, exam attendance, result, final admission and dates.",
+            "ar": "احتفظ بالدعوة وحضور الامتحان والنتيجة والقبول النهائي والتواريخ."
+          },
+          {
+            "fr": "Rédigez une courte explication reliant concours, admission et demande de carte étudiant en France.",
+            "zh": "写一封简短说明，连接考试、录取和在法国申请学生居留的逻辑。",
+            "en": "Write a short explanation linking exam, admission and the student-card request in France.",
+            "ar": "اكتب شرحا قصيرا يربط الامتحان والقبول وطلب بطاقة الطالب في فرنسا."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Convocation au concours",
+            "zh": "考试邀请",
+            "en": "Exam invitation",
+            "ar": "دعوة الامتحان"
+          },
+          {
+            "fr": "Résultat et admission",
+            "zh": "结果和录取",
+            "en": "Result and admission",
+            "ar": "النتيجة والقبول"
+          },
+          {
+            "fr": "Lettre explicative",
+            "zh": "解释信",
+            "en": "Explanation letter",
+            "ar": "رسالة شرح"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Dossier étudiant-concours distinct",
+            "zh": "étudiant-concours 独立材料包",
+            "en": "Separate étudiant-concours file",
+            "ar": "ملف étudiant-concours منفصل"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape commune 1 : préparer le dossier étudiant",
+          "zh": "共用第 1 步：准备学生居留材料",
+          "en": "Common step 1: prepare the student file",
+          "ar": "الخطوة المشتركة 1: تحضير ملف الطالب"
+        },
+        "goal": {
+          "fr": "Une fois la bonne situation choisie, les pièces étudiantes principales se rejoignent.",
+          "zh": "选定正确情况后，学生居留的主体材料基本一致。",
+          "en": "Once the right situation is chosen, the main student documents converge.",
+          "ar": "بعد اختيار الحالة الصحيحة، تتشابه وثائق الطالب الأساسية."
+        },
+        "actions": [
+          {
+            "fr": "Regroupez passeport, e-photo, domicile récent, inscription ou préinscription.",
+            "zh": "整理护照、e-photo、近期住址证明、注册或预注册。",
+            "en": "Gather passport, e-photo, recent address proof and registration or pre-registration.",
+            "ar": "اجمع الجواز وe-photo وإثبات السكن والتسجيل أو التسجيل المسبق."
+          },
+          {
+            "fr": "Ajoutez relevés de notes, dernier diplôme, attestation de réussite ou explication si le document final manque.",
+            "zh": "加入成绩单、最近文凭、成功证明；最终文件未出时准备解释信。",
+            "en": "Add transcripts, latest diploma, success certificate or explanation if final proof is missing.",
+            "ar": "أضف كشف الدرجات وآخر شهادة وشهادة نجاح أو شرحا إذا لم تتوفر الوثيقة النهائية."
+          },
+          {
+            "fr": "Préparez les ressources avec relevés, bourse, garant, salaire ou autre preuve traçable.",
+            "zh": "用流水、奖学金、担保、工资或其他可追踪证据准备资源证明。",
+            "en": "Prepare resources with statements, scholarship, guarantor, salary or other traceable proof.",
+            "ar": "حضّر الموارد بكشوف أو منحة أو ضامن أو راتب أو إثبات آخر قابل للتتبع."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Passeport",
+            "zh": "护照",
+            "en": "Passport",
+            "ar": "جواز"
+          },
+          {
+            "fr": "e-photo",
+            "zh": "e-photo",
+            "en": "e-photo",
+            "ar": "e-photo"
+          },
+          {
+            "fr": "Ressources",
+            "zh": "资源证明",
+            "en": "Resources",
+            "ar": "موارد"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Dossier étudiant prêt",
+            "zh": "学生材料包准备好",
+            "en": "Student file ready",
+            "ar": "ملف الطالب جاهز"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape commune 2 : déposer, compléter, retirer",
+          "zh": "共用第 2 步：提交、补件、取卡",
+          "en": "Common step 2: file, complete, pick up",
+          "ar": "الخطوة المشتركة 2: الإرسال والاستكمال والاستلام"
+        },
+        "goal": {
+          "fr": "Le suivi administratif est commun aux deux situations.",
+          "zh": "两种情况的行政跟踪步骤相同。",
+          "en": "Administrative tracking is common to both situations.",
+          "ar": "المتابعة الإدارية مشتركة بين الحالتين."
+        },
+        "actions": [
+          {
+            "fr": "Déposez sur ANEF ou selon la consigne de votre préfecture; notez date, numéro de dossier et attestation.",
+            "zh": "按 ANEF 或所在地 prefecture 要求提交；记录日期、档案号和 attestation。",
+            "en": "File on ANEF or as instructed by your prefecture; record date, file number and certificate.",
+            "ar": "أرسل عبر ANEF أو حسب تعليمات المحافظة؛ سجل التاريخ ورقم الملف والشهادة."
+          },
+          {
+            "fr": "Si un complément arrive, sauvegardez la demande, la date limite et la preuve d’envoi.",
+            "zh": "收到补件时，保存通知、截止日期和提交证明。",
+            "en": "If a request arrives, save the request, deadline and upload proof.",
+            "ar": "إذا وصل طلب، احفظ الطلب والمهلة وإثبات الرفع."
+          },
+          {
+            "fr": "À la remise, vérifiez nom, naissance, catégorie, dates et remarques.",
+            "zh": "取卡时核对姓名、生日、类别、有效期和备注。",
+            "en": "At pickup, check name, birth date, category, validity dates and remarks.",
+            "ar": "عند الاستلام تحقق من الاسم والميلاد والفئة والتواريخ والملاحظات."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Attestation",
+            "zh": "attestation",
+            "en": "Certificate",
+            "ar": "شهادة"
+          },
+          {
+            "fr": "Compléments",
+            "zh": "补件",
+            "en": "Requests",
+            "ar": "طلبات"
+          },
+          {
+            "fr": "Timbre fiscal si demandé",
+            "zh": "如要求的税票",
+            "en": "Tax stamp if requested",
+            "ar": "طابع ضريبي عند الطلب"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Carte archivée",
+            "zh": "居留卡信息已归档",
+            "en": "Card archived",
+            "ar": "تمت أرشفة البطاقة"
+          }
+        ]
+      }
+    ],
+    "local_fields": [],
+    "official_links": [
+      {
+        "label": {
+          "fr": "ANEF - Étrangers en France",
+          "zh": "ANEF - 外国人在法国",
+          "en": "ANEF - Foreigners in France",
+          "ar": "ANEF - الأجانب في فرنسا"
+        },
+        "url": "https://administration-etrangers-en-france.interieur.gouv.fr/particuliers/",
+        "note": {
+          "fr": "Portail officiel pour valider le VLS-TS et déposer certaines demandes.",
+          "zh": "验证 VLS-TS 和部分居留申请的官方入口。",
+          "en": "Official portal to validate VLS-TS and file some requests.",
+          "ar": "البوابة الرسمية لتفعيل VLS-TS وتقديم بعض الطلبات."
+        }
+      },
+      {
+        "label": {
+          "fr": "Service-Public - Étudiant étranger",
+          "zh": "Service-Public - 外国学生",
+          "en": "Service-Public - Foreign student",
+          "ar": "Service-Public - الطالب الأجنبي"
+        },
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F2231",
+        "note": {
+          "fr": "Informations officielles sur VLS-TS étudiant et carte de séjour étudiant.",
+          "zh": "学生 VLS-TS 和学生居留卡官方说明。",
+          "en": "Official information on student VLS-TS and student residence card.",
+          "ar": "معلومات رسمية عن VLS-TS الطالب وبطاقة إقامة الطالب."
+        }
+      },
+      {
+        "label": {
+          "fr": "Service-Public - Étudiant-concours",
+          "zh": "Service-Public - étudiant-concours",
+          "en": "Service-Public - Étudiant-concours",
+          "ar": "Service-Public - étudiant-concours"
+        },
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F16189",
+        "note": {
+          "fr": "Cas du visa étudiant-concours après réussite et admission.",
+          "zh": "étudiant-concours 签证通过考试并录取后的情况。",
+          "en": "Étudiant-concours visa after success and admission.",
+          "ar": "حالة تأشيرة étudiant-concours بعد النجاح والقبول."
+        }
+      },
+      {
+        "label": {
+          "fr": "Service-Public - Contrat d’engagement",
+          "zh": "Service-Public - 共和国原则承诺",
+          "en": "Service-Public - Republican commitment",
+          "ar": "Service-Public - الالتزام الجمهوري"
+        },
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F38329",
+        "note": {
+          "fr": "Contrat à joindre dans de nombreuses demandes de séjour.",
+          "zh": "许多居留申请需要附上的承诺书。",
+          "en": "Commitment to include in many residence applications.",
+          "ar": "التزام يرفق في كثير من طلبات الإقامة."
+        }
+      }
+    ],
+    "next_steps": [
+      {
+        "fr": "Créez un dossier PDF nommé par date et par type de pièce avant d’ouvrir ANEF.",
+        "zh": "打开 ANEF 前，先按日期和材料类型命名 PDF 文件夹。",
+        "en": "Create a PDF folder named by date and document type before opening ANEF.",
+        "ar": "أنشئ مجلدا للـPDF حسب التاريخ ونوع الوثيقة قبل فتح ANEF."
+      }
+    ],
+    "disclaimer": {
+      "fr": "Les frais, fenêtres et pièces changent; vérifiez la page officielle et votre préfecture avant dépôt.",
+      "zh": "费用、窗口和材料会变化；提交前核对官方页面和所在地 prefecture。",
+      "en": "Fees, windows and documents change; check official pages and your prefecture before filing.",
+      "ar": "قد تتغير الرسوم والمواعيد والوثائق؛ تحقق من الصفحات الرسمية والمحافظة قبل الإرسال."
+    }
+  },
+  {
+    "id": "renew-residence-card",
+    "title": {
+      "fr": "Renouveler le titre de séjour",
+      "zh": "续居留卡",
+      "en": "Renew residence card",
+      "ar": "تجديد بطاقة الإقامة"
+    },
+    "subtitle": {
+      "fr": "Étudiant, salarié, talent, VPF",
+      "zh": "学生、工作、人才、VPF",
+      "en": "Student, work, talent, VPF",
+      "ar": "طالب، عمل، موهبة، VPF"
+    },
+    "badge": {
+      "fr": "4 parcours",
+      "zh": "四类路径",
+      "en": "4 tracks",
+      "ar": "4 مسارات"
+    },
+    "summary": {
+      "fr": "Renouvellement détaillé par parcours : calendrier, pièces communes, continuité du statut, changement de statut, preuves, compléments, attestation de prolongation et retrait.",
+      "zh": "按路径拆解续居留：时间线、通用材料、身份连续性、换身份、证据、补件、延期证明和取卡。",
+      "en": "Detailed renewal by route: timeline, shared documents, status continuity, status change, proof, requests, extension certificate and pickup.",
+      "ar": "تجديد مفصل حسب المسار: الجدول، الوثائق المشتركة، استمرارية الوضع، تغيير الوضع، الإثباتات، الطلبات، شهادة التمديد والاستلام."
+    },
+    "audience": {
+      "fr": "Personnes dont le titre arrive à expiration et qui renouvellent étudiant, salarié, passeport talent ou vie privée et familiale.",
+      "zh": "居留即将到期，需要续学生、工作、人才或 VPF 居留的人。",
+      "en": "People whose card is expiring and who renew student, work, talent or private/family-life residence.",
+      "ar": "الأشخاص الذين تنتهي بطاقتهم ويجددون طالبا أو عملا أو موهبة أو حياة خاصة وعائلية."
+    },
+    "offline_notice": {
+      "fr": "Le guide reste local et ne remplace pas les consignes ANEF/préfecture.",
+      "zh": "本指南只在本地，不替代 ANEF 或 prefecture 指令。",
+      "en": "The guide is local and does not replace ANEF/prefecture instructions.",
+      "ar": "الدليل محلي ولا يحل محل تعليمات ANEF أو المحافظة."
+    },
+    "checklist": [
+      {
+        "fr": "Commencez tôt : vérifiez la fenêtre officielle de dépôt selon votre titre et votre préfecture.",
+        "zh": "提前开始：按你的居留类型和所在地核对官方提交窗口。",
+        "en": "Start early: check the official filing window for your card and prefecture.",
+        "ar": "ابدأ مبكرا: تحقق من نافذة الإيداع الرسمية حسب بطاقتك ومحافظتك."
+      },
+      {
+        "fr": "Préparez passeport, ancien titre, domicile récent, e-photo, ressources, avis d’impôt si utile et contrat républicain si demandé.",
+        "zh": "准备护照、旧居留、近期住址、e-photo、资源、必要时税单，以及如要求的共和国原则承诺。",
+        "en": "Prepare passport, old card, recent address proof, e-photo, resources, tax notice if useful and republican commitment if requested.",
+        "ar": "حضّر الجواز والبطاقة القديمة وإثبات السكن وe-photo والموارد والإشعار الضريبي عند الحاجة والالتزام الجمهوري عند الطلب."
+      },
+      {
+        "fr": "Choisissez le bon parcours : continuité étudiant, travail, talent, VPF ou changement de statut.",
+        "zh": "选择正确路径：学生连续、工作、人才、VPF 或换身份。",
+        "en": "Choose the right route: student continuity, work, talent, VPF or status change.",
+        "ar": "اختر المسار الصحيح: استمرار طالب، عمل، موهبة، VPF أو تغيير وضع."
+      },
+      {
+        "fr": "Gardez les preuves de continuité : études, emploi, projet, famille ou vie commune selon le cas.",
+        "zh": "保存连续性证据：学习、就业、项目、家庭或共同生活，视情况而定。",
+        "en": "Keep continuity proof: studies, employment, project, family or shared life depending on the case.",
+        "ar": "احتفظ بإثبات الاستمرارية: دراسة أو عمل أو مشروع أو عائلة أو حياة مشتركة حسب الحالة."
+      },
+      {
+        "fr": "Suivez attestation de prolongation, récépissé, complément, décision, timbre fiscal et retrait.",
+        "zh": "跟踪延期证明、récépissé、补件、决定、税票和取卡。",
+        "en": "Track extension certificate, receipt, request, decision, tax stamp and pickup.",
+        "ar": "تابع شهادة التمديد والإيصال والطلبات والقرار والطابع والاستلام."
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "fr": "Étape commune 1 : établir le calendrier",
+          "zh": "通用第 1 步：建立时间线",
+          "en": "Common step 1: build the timeline",
+          "ar": "الخطوة المشتركة 1: إنشاء الجدول"
+        },
+        "goal": {
+          "fr": "Ne pas laisser l’expiration piloter le dossier.",
+          "zh": "不要等到到期日逼着你处理。",
+          "en": "Do not let expiry drive the case.",
+          "ar": "لا تجعل تاريخ الانتهاء يقود الملف."
+        },
+        "actions": [
+          {
+            "fr": "Notez expiration du titre, expiration du passeport, date possible de dépôt et contraintes scolaires/professionnelles.",
+            "zh": "记录居留到期、护照到期、可提交日期和学业/工作限制。",
+            "en": "Record card expiry, passport expiry, possible filing date and school/work constraints.",
+            "ar": "سجل انتهاء البطاقة والجواز وتاريخ الإيداع الممكن وقيود الدراسة/العمل."
+          },
+          {
+            "fr": "Créez des rappels pour pièces, dépôt, complément, attestation et retrait.",
+            "zh": "为材料、提交、补件、证明和取卡设置提醒。",
+            "en": "Create reminders for documents, filing, requests, certificate and pickup.",
+            "ar": "أنشئ تذكيرات للوثائق والإيداع والطلبات والشهادة والاستلام."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Ancien titre",
+            "zh": "旧居留",
+            "en": "Old card",
+            "ar": "البطاقة القديمة"
+          },
+          {
+            "fr": "Passeport",
+            "zh": "护照",
+            "en": "Passport",
+            "ar": "جواز"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Calendrier de renouvellement",
+            "zh": "续签时间线",
+            "en": "Renewal timeline",
+            "ar": "جدول التجديد"
+          }
+        ]
+      },
+      {
+        "title": {
+          "fr": "Étape commune 2 : vérifier continuité ou changement de statut",
+          "zh": "通用第 2 步：确认续同类还是换身份",
+          "en": "Common step 2: check continuity or status change",
+          "ar": "الخطوة المشتركة 2: التحقق من الاستمرارية أو تغيير الوضع"
+        },
+        "goal": {
+          "fr": "Les pièces changent fortement si vous passez étudiant vers salarié, talent ou VPF.",
+          "zh": "学生转工作、人才或 VPF 时，材料差别很大。",
+          "en": "Documents change significantly when moving from student to work, talent or VPF.",
+          "ar": "تتغير الوثائق كثيرا عند الانتقال من طالب إلى عمل أو موهبة أو VPF."
+        },
+        "actions": [
+          {
+            "fr": "Identifiez le statut demandé et la date de début du nouveau fondement.",
+            "zh": "确认申请身份和新身份依据开始日期。",
+            "en": "Identify requested status and start date of the new basis.",
+            "ar": "حدد الوضع المطلوب وتاريخ بداية الأساس الجديد."
+          },
+          {
+            "fr": "Préparez une lettre courte si le parcours n’est pas linéaire.",
+            "zh": "路径不线性时准备简短解释信。",
+            "en": "Prepare a short letter if the path is not linear.",
+            "ar": "حضّر رسالة قصيرة إذا لم يكن المسار خطيا."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Preuves de continuité",
+            "zh": "连续性证明",
+            "en": "Continuity proof",
+            "ar": "إثبات الاستمرارية"
+          },
+          {
+            "fr": "Lettre explicative",
+            "zh": "解释信",
+            "en": "Explanation letter",
+            "ar": "رسالة شرح"
+          }
+        ],
+        "outputs": [
+          {
+            "fr": "Parcours confirmé",
+            "zh": "路径确认",
+            "en": "Route confirmed",
+            "ar": "تم تأكيد المسار"
+          }
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "id": "student",
+        "title": {
+          "fr": "Renouvellement étudiant",
+          "zh": "学生居留续签",
+          "en": "Student renewal",
+          "ar": "تجديد الطالب"
+        },
+        "subtitle": {
+          "fr": "Titre étudiant",
+          "zh": "学生居留",
+          "en": "Student card",
+          "ar": "بطاقة طالب"
+        },
+        "when_to_use": {
+          "fr": "Vous continuez des études et devez prouver inscription, progression et ressources.",
+          "zh": "继续学习，需要证明注册、学习进展和资源。",
+          "en": "You continue studying and must prove registration, progress and resources.",
+          "ar": "تواصل الدراسة ويجب إثبات التسجيل والتقدم والموارد."
+        },
+        "steps": [
+          {
+            "fr": "Obtenez inscription ou préinscription de l’année suivante.",
+            "zh": "取得下一学年的注册或预注册。",
+            "en": "Get registration or pre-registration for the next year.",
+            "ar": "احصل على تسجيل أو تسجيل مسبق للسنة القادمة."
+          },
+          {
+            "fr": "Ajoutez notes, assiduité, crédits, diplôme ou attestation de réussite.",
+            "zh": "加入成绩、出勤、学分、文凭或成功证明。",
+            "en": "Add grades, attendance, credits, diploma or success certificate.",
+            "ar": "أضف الدرجات والحضور والوحدات والشهادة أو شهادة النجاح."
+          },
+          {
+            "fr": "Expliquez redoublement, changement d’école ou réorientation avec documents.",
+            "zh": "重读、换校或转专业时，用文件解释。",
+            "en": "Explain repeats, school change or reorientation with documents.",
+            "ar": "اشرح الإعادة أو تغيير المدرسة أو التوجيه بوثائق."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Certificat de scolarité",
+            "zh": "注册证明",
+            "en": "School certificate",
+            "ar": "شهادة دراسة"
+          },
+          {
+            "fr": "Relevés de notes",
+            "zh": "成绩单",
+            "en": "Transcripts",
+            "ar": "كشف درجات"
+          },
+          {
+            "fr": "Ressources",
+            "zh": "资源",
+            "en": "Resources",
+            "ar": "موارد"
+          }
+        ],
+        "risk_points": [
+          {
+            "fr": "Progression faible ou absences non expliquées.",
+            "zh": "成绩/出勤不足且无解释。",
+            "en": "Weak progress or unexplained absences.",
+            "ar": "تقدم ضعيف أو غياب بلا شرح."
+          },
+          {
+            "fr": "Ressources insuffisantes ou non traçables.",
+            "zh": "资源不足或不可追踪。",
+            "en": "Insufficient or untraceable resources.",
+            "ar": "موارد غير كافية أو غير قابلة للتتبع."
+          }
+        ]
+      },
+      {
+        "id": "work",
+        "title": {
+          "fr": "Renouvellement salarié",
+          "zh": "工作居留续签",
+          "en": "Work renewal",
+          "ar": "تجديد العمل"
+        },
+        "subtitle": {
+          "fr": "Salarié / travailleur temporaire",
+          "zh": "雇员/临时工作者",
+          "en": "Employee / temporary worker",
+          "ar": "موظف / عامل مؤقت"
+        },
+        "when_to_use": {
+          "fr": "Votre droit au séjour repose sur un emploi ou une autorisation de travail.",
+          "zh": "居留依据是工作或工作许可。",
+          "en": "Your residence right is based on employment or work authorization.",
+          "ar": "حق إقامتك مبني على العمل أو تصريح العمل."
+        },
+        "steps": [
+          {
+            "fr": "Vérifiez contrat, poste, salaire, temps de travail et employeur.",
+            "zh": "核对合同、职位、工资、工时和雇主。",
+            "en": "Check contract, role, salary, working time and employer.",
+            "ar": "تحقق من العقد والمنصب والراتب والوقت وصاحب العمل."
+          },
+          {
+            "fr": "Préparez bulletins récents, attestation employeur et autorisation si applicable.",
+            "zh": "准备近期工资单、雇主证明和如适用的工作许可。",
+            "en": "Prepare recent payslips, employer certificate and authorization if applicable.",
+            "ar": "حضّر قسائم حديثة وشهادة صاحب العمل والتصريح عند اللزوم."
+          },
+          {
+            "fr": "En cas de chômage ou changement d’employeur, documentez la transition.",
+            "zh": "失业或换雇主时，证明过渡过程。",
+            "en": "In unemployment or employer change, document the transition.",
+            "ar": "في البطالة أو تغيير صاحب العمل وثّق الانتقال."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Contrat",
+            "zh": "劳动合同",
+            "en": "Contract",
+            "ar": "عقد"
+          },
+          {
+            "fr": "Bulletins de salaire",
+            "zh": "工资单",
+            "en": "Payslips",
+            "ar": "قسائم راتب"
+          },
+          {
+            "fr": "Attestation employeur",
+            "zh": "雇主证明",
+            "en": "Employer certificate",
+            "ar": "شهادة صاحب العمل"
+          }
+        ],
+        "risk_points": [
+          {
+            "fr": "Interruption d’emploi.",
+            "zh": "工作中断。",
+            "en": "Employment interruption.",
+            "ar": "انقطاع العمل."
+          },
+          {
+            "fr": "Autorisation de travail manquante.",
+            "zh": "缺工作许可。",
+            "en": "Missing work authorization.",
+            "ar": "غياب تصريح العمل."
+          }
+        ]
+      },
+      {
+        "id": "talent",
+        "title": {
+          "fr": "Renouvellement talent",
+          "zh": "人才居留续签",
+          "en": "Talent renewal",
+          "ar": "تجديد الموهبة"
+        },
+        "subtitle": {
+          "fr": "Passeport talent",
+          "zh": "Passeport talent",
+          "en": "Passeport talent",
+          "ar": "Passeport talent"
+        },
+        "when_to_use": {
+          "fr": "Vous renouvelez une carte talent ou famille talent.",
+          "zh": "续 passeport talent 或人才家庭卡。",
+          "en": "You renew a talent or talent-family card.",
+          "ar": "تجدد بطاقة موهبة أو عائلة موهبة."
+        },
+        "steps": [
+          {
+            "fr": "Identifiez la sous-catégorie exacte.",
+            "zh": "确认具体子类别。",
+            "en": "Identify the exact subcategory.",
+            "ar": "حدد الفئة الفرعية بدقة."
+          },
+          {
+            "fr": "Vérifiez seuils, contrat, mission, projet, diplôme ou convention de recherche.",
+            "zh": "核对门槛、合同、任务、项目、文凭或研究接收协议。",
+            "en": "Check thresholds, contract, mission, project, diploma or research agreement.",
+            "ar": "تحقق من الشروط والعقد والمهمة والمشروع والشهادة أو اتفاق البحث."
+          },
+          {
+            "fr": "Pour la famille, alignez les dates et preuves avec le dossier principal.",
+            "zh": "家庭成员同步续签时，与主申请人的日期和证明对齐。",
+            "en": "For family, align dates and proof with the main file.",
+            "ar": "للعائلة، طابق التواريخ والإثباتات مع الملف الرئيسي."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Contrat ou convention",
+            "zh": "合同或协议",
+            "en": "Contract or agreement",
+            "ar": "عقد أو اتفاق"
+          },
+          {
+            "fr": "Diplôme",
+            "zh": "文凭",
+            "en": "Diploma",
+            "ar": "شهادة"
+          },
+          {
+            "fr": "Projet",
+            "zh": "项目",
+            "en": "Project",
+            "ar": "مشروع"
+          }
+        ],
+        "risk_points": [
+          {
+            "fr": "Mauvaise sous-catégorie.",
+            "zh": "子类别选错。",
+            "en": "Wrong subcategory.",
+            "ar": "فئة خاطئة."
+          },
+          {
+            "fr": "Projet ou contrat terminé.",
+            "zh": "项目或合同结束。",
+            "en": "Project or contract ended.",
+            "ar": "انتهاء المشروع أو العقد."
+          }
+        ]
+      },
+      {
+        "id": "vpf",
+        "title": {
+          "fr": "Renouvellement VPF",
+          "zh": "VPF 居留续签",
+          "en": "VPF renewal",
+          "ar": "تجديد VPF"
+        },
+        "subtitle": {
+          "fr": "Vie privée et familiale",
+          "zh": "私人和家庭生活",
+          "en": "Private and family life",
+          "ar": "حياة خاصة وعائلية"
+        },
+        "when_to_use": {
+          "fr": "Votre droit au séjour repose sur les liens familiaux ou personnels en France.",
+          "zh": "居留依据是在法国的家庭或私人生活联系。",
+          "en": "Your residence right is based on family or private ties in France.",
+          "ar": "حق إقامتك مبني على الروابط العائلية أو الشخصية في فرنسا."
+        },
+        "steps": [
+          {
+            "fr": "Confirmez le fondement : conjoint, PACS, parent, regroupement familial ou autre.",
+            "zh": "确认依据：配偶、PACS、父母、家庭团聚或其他。",
+            "en": "Confirm the basis: spouse, PACS, parent, family reunification or other.",
+            "ar": "أكد الأساس: زوج، PACS، والد، لم شمل أو غير ذلك."
+          },
+          {
+            "fr": "Rassemblez actes d’état civil, livret de famille et preuves de vie commune récentes et anciennes.",
+            "zh": "整理民事文件、家庭册，以及新旧共同生活证明。",
+            "en": "Gather civil records, family booklet and recent/older shared-life proof.",
+            "ar": "اجمع وثائق الحالة المدنية ودفتر العائلة وإثباتات الحياة المشتركة الحديثة والقديمة."
+          },
+          {
+            "fr": "Expliquez séparations, déménagements ou changements de situation.",
+            "zh": "分居、搬家或关系变化时准备解释。",
+            "en": "Explain separation, moves or status changes.",
+            "ar": "اشرح الانفصال أو الانتقال أو تغير الوضع."
+          }
+        ],
+        "documents": [
+          {
+            "fr": "Actes d’état civil",
+            "zh": "民事文件",
+            "en": "Civil records",
+            "ar": "وثائق مدنية"
+          },
+          {
+            "fr": "Vie commune",
+            "zh": "共同生活证明",
+            "en": "Shared-life proof",
+            "ar": "حياة مشتركة"
+          },
+          {
+            "fr": "Documents famille",
+            "zh": "家庭材料",
+            "en": "Family documents",
+            "ar": "وثائق عائلية"
+          }
+        ],
+        "risk_points": [
+          {
+            "fr": "Preuves trop ponctuelles.",
+            "zh": "证明太零散。",
+            "en": "Proof too sparse.",
+            "ar": "إثباتات قليلة."
+          },
+          {
+            "fr": "Changement familial non expliqué.",
+            "zh": "家庭变化无解释。",
+            "en": "Unexplained family change.",
+            "ar": "تغير عائلي بلا شرح."
+          }
+        ]
+      }
+    ],
+    "civic_training": {
+      "title": {
+        "fr": "Révision civique",
+        "zh": "公民考试/融入复习",
+        "en": "Civic revision",
+        "ar": "مراجعة مدنية"
+      },
+      "summary": {
+        "fr": "Pour certains titres longs ou démarches d’intégration, suivez la formation civique officielle en français.",
+        "zh": "部分多年卡、长期卡或融入相关流程，可用官方法语 formation civique 复习。",
+        "en": "For some long cards or integration steps, use the official French civic training.",
+        "ar": "لبعض البطاقات الطويلة أو إجراءات الاندماج استخدم التكوين المدني الرسمي بالفرنسية."
+      },
+      "official_course": {
+        "label": {
+          "fr": "Formation civique officielle",
+          "zh": "官方 formation civique",
+          "en": "Official civic training",
+          "ar": "التكوين المدني الرسمي"
+        },
+        "url": "https://formation-civique.interieur.gouv.fr/",
+        "note": {
+          "fr": "Utilisez la plateforme officielle plutôt qu’une copie locale.",
+          "zh": "使用官方平台，不在本地复制课程内容。",
+          "en": "Use the official platform rather than a local copy.",
+          "ar": "استخدم المنصة الرسمية بدلا من نسخة محلية."
+        }
+      },
+      "study_steps": []
+    },
+    "local_fields": [],
+    "official_links": [
+      {
+        "label": "ANEF - Étrangers en France",
+        "url": "https://administration-etrangers-en-france.interieur.gouv.fr/particuliers/",
+        "note": {
+          "fr": "Portail de dépôt et suivi.",
+          "zh": "提交和跟踪入口。",
+          "en": "Filing and tracking portal.",
+          "ar": "بوابة الإيداع والمتابعة."
+        }
+      },
+      {
+        "label": "Service-Public - Titres de séjour",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/N110",
+        "note": {
+          "fr": "Entrée générale des titres de séjour.",
+          "zh": "居留证件总入口。",
+          "en": "General residence-card entry point.",
+          "ar": "مدخل عام لبطاقات الإقامة."
+        }
+      },
+      {
+        "label": "Service-Public - Étudiant",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F2231",
+        "note": {
+          "fr": "Renouvellement étudiant et pièces.",
+          "zh": "学生续签和材料。",
+          "en": "Student renewal and documents.",
+          "ar": "تجديد الطالب والوثائق."
+        }
+      },
+      {
+        "label": "Service-Public - Contrat d’engagement",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F38329",
+        "note": {
+          "fr": "Engagement à respecter les principes de la République.",
+          "zh": "遵守共和国原则承诺。",
+          "en": "Commitment to respect the principles of the Republic.",
+          "ar": "الالتزام باحترام مبادئ الجمهورية."
+        }
+      }
+    ],
+    "next_steps": [
+      {
+        "fr": "Choisissez d’abord le parcours, puis assemblez les preuves de continuité les plus récentes.",
+        "zh": "先选路径，再整理最新的连续性证据。",
+        "en": "Choose the route first, then assemble the most recent continuity proof.",
+        "ar": "اختر المسار أولا ثم اجمع أحدث إثباتات الاستمرارية."
+      }
+    ],
+    "disclaimer": {
+      "fr": "Les règles varient selon statut, nationalité et préfecture; vérifiez avant dépôt.",
+      "zh": "规则会因身份、国籍和 prefecture 不同而变化；提交前核对。",
+      "en": "Rules vary by status, nationality and prefecture; check before filing.",
+      "ar": "تختلف القواعد حسب الوضع والجنسية والمحافظة؛ تحقق قبل الإرسال."
+    }
+  }
+]

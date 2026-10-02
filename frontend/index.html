@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>外国人在法办事</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1 data-i18n="app-title">外国人在法办事</h1>
+          <p>Assistant local pour la déclaration LMNP · 本地 LMNP 申报辅助工具</p>
+        </div>
+        <div class="topbar-actions">
+          <label class="language-switch" for="language-select">
+            <span id="language-label">Langue · 语言</span>
+            <select id="language-select" aria-label="Choisir la langue" onchange="window.setAppLanguage(this.value)">
+              <option value="fr">Français</option>
+              <option value="zh">中文</option>
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+            </select>
+          </label>
+        </div>
+      </header>
+
+      <nav id="module-nav" class="module-nav" aria-label="Services locaux" hidden>
+        <a href="#lmnp" data-module="lmnp">LMNP</a>
+      </nav>
+
+      <section id="service-home" class="panel service-home">
+        <div id="service-cards" class="service-cards"></div>
+      </section>
+
+      <section id="service-detail" class="panel service-detail" hidden></section>
+
+      <section id="lmnp-page" class="service-page">
+      <section id="landlord-guide" class="panel landlord-guide"></section>
+      <section class="workspace">
+        <form id="lmnp-form" class="panel">
+          <h2>Informations de déclaration · 申报信息</h2>
+
+          <div class="grid">
+            <label>
+              <span class="label-line">
+                <span>Année des revenus · 收入年份</span>
+                <button class="info" type="button" data-help="tax_year" aria-label="Aide année des revenus">i</button>
+              </span>
+              <select name="tax_year"></select>
+            </label>
+            <label>
+              <span class="label-line">
+                <span>Nature de la location · 出租类型</span>
+                <button class="info" type="button" data-help="rental_kind" aria-label="Aide nature de la location">i</button>
+              </span>
+              <select name="rental_kind">
+                <option value="long_term">Location meublée de longue durée · 长租带家具出租</option>
+                <option value="tourism_classified">Meublé de tourisme classé · 已评级旅游家具房</option>
+                <option value="tourism_unclassified">Meublé de tourisme non classé · 未评级旅游家具房</option>
+                <option value="chambre_hotes">Chambre d'hôtes · 民宿客房</option>
+                <option value="principal_home_room">Pièce de la résidence principale · 主住宅内房间</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="grid">
+            <label>
+              <span class="label-line">
+                <span>Recettes brutes annuelles TTC · 年含税总收入</span>
+                <button class="info" type="button" data-help="receipts" aria-label="Aide recettes">i</button>
+              </span>
+              <input name="receipts" type="number" min="0" step="0.01" value="12000" />
+            </label>
+            <label>
+              <span class="label-line">
+                <span>Autres revenus d'activité du foyer fiscal · 税户其他职业收入</span>
+                <button class="info" type="button" data-help="other_activity_income" aria-label="Aide autres revenus">i</button>
+              </span>
+              <input name="other_activity_income" type="number" min="0" step="0.01" value="50000" />
+            </label>
+          </div>
+
+          <div class="grid">
+            <label>
+              <span class="label-line">
+                <span>Recettes N-1 · 上一年收入</span>
+                <button class="info" type="button" data-help="receipts_previous_year" aria-label="Aide recettes N-1">i</button>
+              </span>
+              <input name="receipts_previous_year" type="number" min="0" step="0.01" value="10000" />
+            </label>
+            <label>
+              <span class="label-line">
+                <span>Recettes N-2 · 前两年收入</span>
+                <button class="info" type="button" data-help="receipts_two_years_prior" aria-label="Aide recettes N-2">i</button>
+              </span>
+              <input name="receipts_two_years_prior" type="number" min="0" step="0.01" value="9000" />
+            </label>
+          </div>
+
+          <div class="grid">
+            <label>
+              <span class="label-line">
+                <span>Régime d'imposition · 计税制度</span>
+                <button class="info" type="button" data-help="regime_choice" aria-label="Aide régime">i</button>
+              </span>
+              <select name="regime_choice">
+                <option value="auto" selected>Automatique · 自动判断</option>
+                <option value="micro">Micro-BIC</option>
+                <option value="reel">Régime réel · 实际制度</option>
+              </select>
+            </label>
+            <label>
+              <span class="label-line">
+                <span>Adresse de la location · 出租房地址</span>
+                <button class="info" type="button" data-help="property_address" aria-label="Aide adresse">i</button>
+              </span>
+              <input name="property_address" type="text" placeholder="Adresse du logement loué" />
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Situation et formalités · 身份与手续</legend>
+            <label class="check"><input name="fiscal_resident_france" type="checkbox" checked /> Résident fiscal de France · 法国税务居民</label>
+            <label class="check"><input name="furnished" type="checkbox" checked /> Logement loué meublé · 带家具出租</label>
+            <label class="check"><input name="has_siret" type="checkbox" /> Numéro SIRET déjà obtenu · 已有 SIRET</label>
+            <label class="check"><input name="first_year_activity" type="checkbox" /> Première année d'activité · 第一年出租</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Exonération résidence principale · 主住宅内出租免税判断</legend>
+            <label class="check"><input name="in_principal_home" type="checkbox" /> Les pièces font partie de ma résidence principale · 房间属于我的主住宅</label>
+            <label class="check">
+              <input name="tenant_main_or_seasonal_residence" type="checkbox" />
+              Résidence principale du locataire ou séjour saisonnier admissible · 租客主住宅或符合条件的季节性居住
+            </label>
+            <label class="check">
+              <input name="reasonable_rent" type="checkbox" />
+              <span>Prix de location fixé dans des limites raisonnables · 租金在官方“合理限额”内</span>
+              <button class="info inline-info" type="button" data-help="reasonable_rent" aria-label="Aide loyer raisonnable">i</button>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Régime réel : brouillon rapide · 实际制度快速草稿</legend>
+            <div class="grid">
+              <label>
+                <span class="label-line">
+                  <span>Résultat fiscal déjà calculé · 已算出的税务结果</span>
+                  <button class="info" type="button" data-help="real_taxable_result" aria-label="Aide résultat fiscal">i</button>
+                </span>
+                <input name="real_taxable_result" type="number" step="0.01" placeholder="Résultat issu de la liasse 2031" />
+              </label>
+              <label>
+                <span class="label-line">
+                  <span>Charges déductibles annuelles en EUR · 全年可扣费用金额（欧元）</span>
+                  <button class="info" type="button" data-help="charges" aria-label="Aide charges">i</button>
+                </span>
+                <input name="charges" type="number" min="0" step="0.01" value="0" placeholder="ex. 2500" />
+              </label>
+            </div>
+            <label>
+              <span class="label-line">
+                <span>Amortissements · 折旧</span>
+                <button class="info" type="button" data-help="depreciation" aria-label="Aide amortissements">i</button>
+              </span>
+              <input name="depreciation" type="number" min="0" step="0.01" value="0" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Régime réel : charges déductibles annuelles en EUR · 实际制度全年可扣费用（欧元）</legend>
+            <p class="field-note">Tous les champs ci-dessous sont des montants annuels en euros, pas des taux ni des mensualités. · 下面全部填“全年欧元金额”，不是百分比，也不是每月金额。</p>
+            <div class="grid">
+              <label><span class="label-line"><span>Intérêts d'emprunt payés dans l'année, EUR · 本年已付贷款利息金额，不是利率</span><button class="info" type="button" data-help="loan_interest">i</button></span><input name="loan_interest" type="number" min="0" step="0.01" value="0" placeholder="ex. 4100" /></label>
+              <label><span class="label-line"><span>Taxe foncière annuelle, EUR · 年度房产税金额</span><button class="info" type="button" data-help="deductible_charges">i</button></span><input name="property_tax" type="number" min="0" step="0.01" value="0" placeholder="ex. 950" /></label>
+            </div>
+            <div class="grid">
+              <label><span class="label-line"><span>Assurance annuelle, EUR · 年度保险金额</span><button class="info" type="button" data-help="deductible_charges">i</button></span><input name="insurance" type="number" min="0" step="0.01" value="0" placeholder="ex. 180" /></label>
+              <label><span class="label-line"><span>Charges de copropriété annuelles, EUR · 全年物业/共管费用</span><button class="info" type="button" data-help="deductible_charges">i</button></span><input name="condo_fees" type="number" min="0" step="0.01" value="0" placeholder="ex. 1600" /></label>
+            </div>
+            <div class="grid">
+              <label><span class="label-line"><span>Réparations / entretien annuels, EUR · 全年维修保养金额</span><button class="info" type="button" data-help="repairs_vs_works">i</button></span><input name="repairs_maintenance" type="number" min="0" step="0.01" value="0" placeholder="ex. 350" /></label>
+              <label><span class="label-line"><span>CFE annuelle si avis reçu, EUR · 收到 CFE 通知才填年度金额</span><button class="info" type="button" data-help="cfe">i</button></span><input name="cfe" type="number" min="0" step="0.01" value="0" placeholder="ex. 220" /></label>
+            </div>
+            <div class="grid">
+              <label><span class="label-line"><span>Frais comptables annuels, EUR · 全年会计费用</span><button class="info" type="button" data-help="deductible_charges">i</button></span><input name="accounting_fees" type="number" min="0" step="0.01" value="0" placeholder="ex. 500" /></label>
+              <label><span class="label-line"><span>Autres charges justifiées annuelles, EUR · 其他全年有凭证费用</span><button class="info" type="button" data-help="deductible_charges">i</button></span><input name="other_deductible_charges" type="number" min="0" step="0.01" value="0" placeholder="ex. 120" /></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Régime réel : amortissements par composants · 按组件折旧</legend>
+            <div class="grid">
+              <label><span class="label-line"><span>Prix / valeur du bien · 房产价格/价值</span><button class="info" type="button" data-help="acquisition_price">i</button></span><input name="acquisition_price" type="number" min="0" step="0.01" value="0" /></label>
+              <label><span class="label-line"><span>Valeur du terrain non amortissable, EUR · 不折旧的土地价值</span><button class="info" type="button" data-help="land_value">i</button></span><input name="land_value" type="number" min="0" step="0.01" value="0" placeholder="ex. 30000" /></label>
+            </div>
+            <div class="grid">
+              <label><span class="label-line"><span>Frais de notaire · 公证费</span><button class="info" type="button" data-help="acquisition_fees">i</button></span><input name="notary_fees" type="number" min="0" step="0.01" value="0" /></label>
+              <label><span class="label-line"><span>Frais d'agence · 中介费</span><button class="info" type="button" data-help="acquisition_fees">i</button></span><input name="agency_fees" type="number" min="0" step="0.01" value="0" /></label>
+            </div>
+            <label><span class="label-line"><span>Date de mise en location / service du bien · 房产开始出租/使用日期</span><button class="info" type="button" data-help="service_start">i</button></span><input name="building_service_start" type="date" /></label>
+            <div class="grid">
+              <label><span class="label-line"><span>Mobilier et électroménager · 家具家电价值</span><button class="info" type="button" data-help="furniture_value">i</button></span><input name="furniture_value" type="number" min="0" step="0.01" value="0" /></label>
+              <label><span class="label-line"><span>Date mobilier · 家具开始使用日期</span><button class="info" type="button" data-help="service_start">i</button></span><input name="furniture_service_start" type="date" /></label>
+            </div>
+            <div class="grid">
+              <label><span class="label-line"><span>Travaux d'amélioration immobilisés · 资本化改善工程</span><button class="info" type="button" data-help="repairs_vs_works">i</button></span><input name="works_improvement" type="number" min="0" step="0.01" value="0" /></label>
+              <label><span class="label-line"><span>Date travaux · 工程开始使用日期</span><button class="info" type="button" data-help="service_start">i</button></span><input name="works_service_start" type="date" /></label>
+            </div>
+          </fieldset>
+
+          <fieldset id="form-2031-fields">
+            <legend>2031-SD : informations à reporter · 2031 表逐项信息</legend>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>Exercice ouvert le · 会计年度开始日</span><button class="info" type="button" data-help="exercise_dates">i</button></span>
+                <input name="exercise_opened_on" type="date" />
+              </label>
+              <label>
+                <span class="label-line"><span>Exercice clos le · 会计年度结束日</span><button class="info" type="button" data-help="exercise_dates">i</button></span>
+                <input name="exercise_closed_on" type="date" />
+              </label>
+            </div>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>SIREN · 9 位企业号</span><button class="info" type="button" data-help="siren">i</button></span>
+                <input name="siren" type="text" inputmode="numeric" placeholder="9 chiffres" />
+              </label>
+              <label>
+                <span class="label-line"><span>SIRET · 14 位机构号</span><button class="info" type="button" data-help="siret">i</button></span>
+                <input name="siret" type="text" inputmode="numeric" placeholder="14 chiffres" />
+              </label>
+            </div>
+            <label>
+              <span class="label-line"><span>Dénomination de l'entreprise · 企业/活动名称</span><button class="info" type="button" data-help="business_name">i</button></span>
+              <input name="business_name" type="text" placeholder="Nom Prénom - Location meublée" />
+            </label>
+            <label>
+              <span class="label-line"><span>Adresse de l'entreprise · 活动地址</span><button class="info" type="button" data-help="business_address">i</button></span>
+              <input name="business_address" type="text" placeholder="Adresse liée au SIRET ou logement loué" />
+            </label>
+            <label>
+              <span class="label-line"><span>Adresse du déclarant · 申报人地址</span><button class="info" type="button" data-help="declarant_address">i</button></span>
+              <input name="declarant_address" type="text" placeholder="Si différente de l'adresse de l'entreprise" />
+            </label>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>Mél · 邮箱</span></span>
+                <input name="email" type="email" />
+              </label>
+              <label>
+                <span class="label-line"><span>Téléphone · 电话</span></span>
+                <input name="phone" type="tel" />
+              </label>
+            </div>
+            <label>
+              <span class="label-line"><span>Activités exercées · 经营活动</span><button class="info" type="button" data-help="activity_label">i</button></span>
+              <input name="activity_label" type="text" value="Location meublée non professionnelle" />
+            </label>
+            <div class="grid">
+              <label class="check"><input name="computerized_accounting" type="checkbox" checked /> Comptabilité informatisée · 使用电子会计</label>
+              <label>
+                <span class="label-line"><span>Logiciel utilisé · 使用的软件</span><button class="info" type="button" data-help="accounting_software">i</button></span>
+                <input name="accounting_software" type="text" placeholder="Excel, Indy, Pennylane, expert-comptable..." />
+              </label>
+            </div>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>Revenus de valeurs mobilières · 证券/资本收入</span><button class="info" type="button" data-help="securities_income">i</button></span>
+                <input name="securities_income" type="number" min="0" step="0.01" value="0" />
+              </label>
+              <label>
+                <span class="label-line"><span>Revenus exonérés · 免税收入</span><button class="info" type="button" data-help="exempt_income">i</button></span>
+                <input name="exempt_income" type="number" min="0" step="0.01" value="0" />
+              </label>
+            </div>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>Plus-value court terme · 短期增值</span><button class="info" type="button" data-help="capital_gains">i</button></span>
+                <input name="short_term_capital_gain" type="number" min="0" step="0.01" value="0" />
+              </label>
+              <label>
+                <span class="label-line"><span>Plus-value long terme 12,8 % · 长期增值</span><button class="info" type="button" data-help="capital_gains">i</button></span>
+                <input name="long_term_capital_gain_128" type="number" min="0" step="0.01" value="0" />
+              </label>
+            </div>
+            <div class="grid">
+              <label>
+                <span class="label-line"><span>Prélèvements personnels annuels, EUR · 全年从出租账户拿回自己用的钱</span><button class="info" type="button" data-help="owner_movements">i</button></span>
+                <input name="personal_withdrawals" type="number" min="0" step="0.01" value="0" />
+              </label>
+              <label>
+                <span class="label-line"><span>Apports / compte courant annuels, EUR · 全年自己垫付或打入出租活动的钱</span><button class="info" type="button" data-help="owner_movements">i</button></span>
+                <input name="capital_contributions" type="number" min="0" step="0.01" value="0" />
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Générer l'aide de déclaration · 生成申报指引</button>
+        </form>
+
+        <section class="result panel">
+          <div class="result-head">
+            <h2>Résultat · 结果</h2>
+          </div>
+          <div id="output" class="empty">Remplissez les informations à gauche puis générez le résultat. · 填写左侧信息后生成。</div>
+        </section>
+      </section>
+
+      <section id="source-search" class="panel official-single-link">
+        <h2>Recherche dans les sources officielles locales · 本地官方资料检索</h2>
+        <div class="search">
+          <input id="search-query" type="search" value="micro BIC location meublée seuil abattement" />
+          <button id="search-btn" type="button">Rechercher · 搜索</button>
+        </div>
+        <div id="search-results"></div>
+      </section>
+      </section>
+    </main>
+
+    <dialog id="help-dialog">
+      <div class="dialog-head">
+        <h2 id="help-title"></h2>
+        <button id="help-close" type="button" aria-label="Fermer">×</button>
+      </div>
+      <div id="help-body"></div>
+    </dialog>
+
+    <script src="/assets/app.js?v=20261002-i18n3"></script>
+  </body>
+</html>

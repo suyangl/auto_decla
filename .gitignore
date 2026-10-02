@@ -1,0 +1,9 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local corpus additions and logs
+backend/data/official_corpus.local.json
+*.log
