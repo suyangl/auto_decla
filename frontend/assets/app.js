@@ -786,7 +786,7 @@ function renderServiceCards() {
     .map((rawService) => {
       const service = moduleCardCopy(rawService.id) || localizedService(rawService);
       return `
-        <a class="service-card" href="#${escapeHtml(rawService.id)}">
+        <a class="service-card" href="#${escapeHtml(rawService.id)}" data-module="${escapeHtml(rawService.id)}">
           <strong>${escapeHtml(service.title)}</strong>
           <small>${escapeHtml(service.subtitle)}</small>
           <p>${escapeHtml(service.summary)}</p>
@@ -795,7 +795,7 @@ function renderServiceCards() {
     })
     .join("");
   serviceCards.innerHTML = `
-    <a class="service-card service-card-primary" href="#lmnp">
+    <a class="service-card service-card-primary" href="#lmnp" data-module="lmnp">
       <strong>${escapeHtml(lmnp.title)}</strong>
       <small>${escapeHtml(lmnp.subtitle)}</small>
       <p>${escapeHtml(lmnp.summary)}</p>
@@ -1017,6 +1017,9 @@ function route() {
   if (service) renderServiceDetail(localizedService(service));
   moduleNav.querySelectorAll("a").forEach((link) => {
     link.classList.toggle("active", link.dataset.module === (moduleId || "home"));
+  });
+  serviceCards.querySelectorAll(".service-card").forEach((card) => {
+    card.classList.toggle("active", card.dataset.module === (moduleId || "home"));
   });
 }
 

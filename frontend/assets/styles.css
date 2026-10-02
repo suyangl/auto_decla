@@ -182,8 +182,15 @@ label,
 }
 
 .service-card-primary {
-  border-top: 4px solid var(--red);
+  border-top-width: 1px;
+}
+
+.service-card.active,
+.service-card.active:hover {
+  border-color: var(--red);
+  border-top-width: 4px;
   background: #fffafa;
+  box-shadow: 0 10px 22px rgb(220 38 38 / 12%);
 }
 
 .service-card span {
