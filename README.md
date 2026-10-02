@@ -97,11 +97,6 @@ using a new tax year, update and manually verify the following:
    year-specific explanations in `frontend/assets/app.js`.
 5. Run the tests and rebuild the service:
 
-```powershell
-cd D:\code\auto_decla
-docker compose exec -T lmnp python -m pytest
-docker compose up -d --build lmnp
-```
 
 The backend accepts the current calendar year and the following year dynamically.
 It rejects a tax year more than one year in the future, but this validation only
